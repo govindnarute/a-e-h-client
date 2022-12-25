@@ -22,7 +22,7 @@ const routes: Routes = [
     component: DashboardComponent,
   },
   {
-    path: 'addUser',
+    path: 'users/addUser',
     component: AddUserComponent,
   },
   {

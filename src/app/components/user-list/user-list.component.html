@@ -21,15 +21,17 @@
           <tr class="text-center">
             <th>User Name</th>
             <th>Role</th>
+            <th>Created At</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
 
         </thead>
         <tbody>
-          <tr>
-            <td>Poonam</td>
-            <td>Admin</td>
+          <tr *ngFor="let item of users">
+            <td>{{item.username}}</td>
+            <td>{{item.role}}</td>
+            <td>{{item.created_at}}</td>
             <td>
               <div class="text-center"><button class="btn btn-success">Edit</button></div>
             </td>

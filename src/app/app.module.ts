@@ -11,6 +11,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { AddStudentComponent } from './components/add-student/add-student.component';
 import { StudentListComponent } from './components/student-list/student-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     UserListComponent,
     AddStudentComponent,
     StudentListComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
