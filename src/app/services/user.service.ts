@@ -9,7 +9,7 @@ export class UserService {
 
   getAllUsers() {
     return this.http.get(
-      'https://a-e-h-server-govindnarute.vercel.app/users'
+      'https://a-e-h-server-govindnarute.vercel.app/api/users'
     );
   }
 }
